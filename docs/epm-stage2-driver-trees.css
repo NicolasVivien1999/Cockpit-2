@@ -1,0 +1,54 @@
+.driver-tree{
+  display:grid;
+  gap:.55rem;
+}
+
+.driver-node{
+  display:grid;
+  grid-template-columns:minmax(12rem,1fr) auto;
+  gap:.75rem;
+  align-items:center;
+  padding:.55rem .7rem;
+  border:1px solid var(--stitch2);
+  border-radius:10px;
+  background:color-mix(in srgb,var(--card) 88%,var(--stitch2));
+}
+
+.driver-node strong{
+  font-weight:750;
+}
+
+.driver-node .v{
+  font-variant-numeric:tabular-nums;
+  font-weight:800;
+}
+
+.driver-node.level-0{
+  border-color:var(--chalk);
+  background:var(--chalk-soft);
+}
+
+.driver-node.level-1{
+  margin-left:1.1rem;
+}
+
+.driver-node.level-2{
+  margin-left:2.2rem;
+}
+
+.driver-node.neg .v{color:var(--red)}
+.driver-node.pos .v{color:var(--green)}
+.driver-node.warn .v{color:var(--amber)}
+
+.driver-note{
+  font-size:.76rem;
+  color:var(--ink2);
+  margin-top:.45rem;
+}
+
+.driver-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(310px,1fr));
+  gap:.9rem;
+  margin:.9rem 0;
+}

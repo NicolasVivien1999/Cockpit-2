@@ -1,0 +1,26 @@
+/* =====================================================================
+   Étape 5b — Blocs transversaux pliables (gain de place)
+   Rend « Filtre transversal » (#s7-xf) et « Exploration transversale »
+   (#stage4-filter) repliables via un en-tête cliquable persistant.
+   ===================================================================== */
+
+.s9-wrap{margin:.15rem 0 .1rem}
+.s9-toggle{
+  display:flex;align-items:center;gap:.55rem;width:100%;font:inherit;text-align:left;
+  background:var(--card);border:1px solid var(--stitch);border-radius:var(--r);
+  padding:.42rem .75rem;cursor:pointer;color:var(--ink2);box-shadow:var(--shadow);
+  transition:border-color .18s ease,color .18s ease,background .18s ease;
+}
+.s9-toggle:hover{border-color:var(--chalk);color:var(--chalk)}
+.s9-toggle:focus-visible{outline:2px solid var(--chalk);outline-offset:1px}
+.s9-chev{display:inline-block;font-size:.7rem;color:var(--ink3);transition:transform .2s ease;transform:rotate(90deg)}
+.s9-toggle[aria-expanded="false"] .s9-chev{transform:rotate(0deg)}
+.s9-title{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.s9-sum{font-size:.74rem;color:var(--ink3);margin-left:.15rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.s9-sum b{color:var(--chalk);font-weight:600}
+.s9-hint{margin-left:auto;font-size:.68rem;color:var(--ink3);opacity:.8;white-space:nowrap}
+
+/* quand replié : masque le contenu, garde l'en-tête */
+.s9-wrap.s9-collapsed > :not(.s9-toggle){display:none!important}
+/* petit resserrement quand déplié */
+.s9-wrap > #s7-xf,.s9-wrap > .stage4-filter{margin-top:.3rem}
