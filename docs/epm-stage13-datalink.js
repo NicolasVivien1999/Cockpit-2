@@ -140,7 +140,7 @@ function plein(P){
  const ent=d.entreprise||{};
  const rap=(d.meta||{}).rapport_sections||{};
  P.innerHTML=`<h2>Veille &amp; alertes</h2>
-  <p class="s13-meta">Collecte du <b>${esc(String((d.meta||{}).genere_le||'?').slice(0,16).replace('T',' '))}</b> · ${(d.meta&&d.meta.sources||[]).length} sources${ent.profil_veille?` · veille calibrée sur <b>${esc(ent.profil_veille)}</b>${ent.naf?` (NAF ${esc(ent.naf)})`:''}`:''}
+  <p class="s13-meta">Collecte du <b>${esc(String((d.meta||{}).genere_le||'?').slice(0,16).replace('T',' '))}</b> · ${(d.meta&&d.meta.sources||[]).length} sources${ent.profil_veille?` · veille calibrée sur <b>${esc(ent.profil_veille)}</b>${ent.naf?` (NAF ${esc(ent.naf)})`:''}${ent.raison?` pour ${esc(ent.raison)}`:''}`:''}
    &nbsp;<button class="s13-btn sec" id="s13-reimport" style="font-size:.7rem;padding:.2rem .55rem">Recharger un JSON</button></p>
   <input type="file" id="s13-file" accept="application/json,.json">
   <div class="kpis">

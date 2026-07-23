@@ -30,6 +30,20 @@ CHAQUE SEMAINE, ENSUITE
   message "Collecte actualisée" te le confirme). Une collecte plus
   ancienne n'écrase jamais une plus récente.
 
+PERSONNALISER L'ENTITÉ ET SON APPARENCE
+  Onglet "Accueil" : présentation dynamique de l'entreprise, alimentée par
+  la fiche d'identité. Onglet "Données & paramètres" > "Identité de
+  l'entité" : 33 champs juridiques, palette de marque (5 couleurs) et
+  typographie. Les couleurs sont réharmonisées automatiquement pour rester
+  lisibles ; le vert et le rouge sémantiques ne changent jamais.
+
+RECALIBRER LA VEILLE SUR UN AUTRE SECTEUR
+  Dans le cockpit : onglet "Données & paramètres" > "Identité de l'entité".
+  Modifiez le code NAF (et le reste de la fiche), puis cliquez sur
+  "Exporter identite.json". Déposez ce fichier dans docs/ du dépôt : le
+  pipeline le lit EN PRIORITÉ sur le cockpit et recalibre thèmes de presse,
+  tendances de recherche, rappels produits et indice de prix.
+
 À SAVOIR
   - Sur un dépôt PUBLIC, cette adresse est publique : n'y mets le cockpit
     que si ses données de démonstration peuvent être vues de tous.
