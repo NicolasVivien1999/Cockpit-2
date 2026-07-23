@@ -1,0 +1,324 @@
+{
+ "meta": {
+  "genere_le": "2026-07-23T18:40:48",
+  "pipeline": "refresh-hebdo CI v3.0 (veille adaptative)",
+  "sources": [
+   "Etalab",
+   "BCE/Frankfurter",
+   "BODACC",
+   "Google News RSS",
+   "ADEME Base Carbone",
+   "Eurostat",
+   "Banque mondiale",
+   "calendrier.api.gouv.fr",
+   "RappelConso",
+   "Banque de France",
+   "Google Trends"
+  ],
+  "rapport_sections": {
+   "profil_entreprise": "MAISON BASTIDE SAS · Mode, textile & habillement (NAF 4771Z → Mode, textile & habillement)",
+   "identite_tiers": "4/4 résolus",
+   "change_bce": "3 devises au 2026-07-23",
+   "bodacc": "0 alerte(s) / 4 tiers",
+   "veille_presse": "6 articles",
+   "co2_ademe": "maritime=0.00554 / routier=0.0946",
+   "conjoncture": "IPCH Habillement et chaussures 12 mois · matière 0 mois · 11 fériés",
+   "rappels_produits": "0 rappel(s) (90 j)",
+   "barometre": "BdF indispo · 2 publication(s) secteur",
+   "tendances_recherche": "indisponible : The request failed: Google returned a response with code 429"
+  }
+ },
+ "entreprise": {
+  "raison": "MAISON BASTIDE SAS",
+  "naf": "4771Z",
+  "naf_lib": "Commerce de détail d'habillement en magasin spécialisé",
+  "secteur": "Textile - Habillement",
+  "ville": "Bordeaux",
+  "profil_veille": "Mode, textile & habillement",
+  "origine": "NAF 4771Z → Mode, textile & habillement",
+  "themes_veille": [
+   "Prêt-à-porter & retail",
+   "Textile & sourcing",
+   "E-commerce mode",
+   "Conjoncture consommation"
+  ]
+ },
+ "fx": {
+  "date": "2026-07-23",
+  "base": "EUR",
+  "rates": {
+   "CNY": 7.7127,
+   "GBP": 0.85318,
+   "USD": 1.1392
+  },
+  "variation_1an_pct": {
+   "USD": -2.8,
+   "CNY": -8.1,
+   "GBP": -1.5
+  }
+ },
+ "clients": [
+  {
+   "code": "CW001",
+   "nom_recherche": "Galeries Lafayette",
+   "canal": "Wholesale",
+   "ca_interne": 1418,
+   "encours": 486,
+   "dso": 88,
+   "siren": "957503931",
+   "nom_officiel": "MAGASINS GALERIES LAFAYETTE (MGL)",
+   "naf": "47.71Z",
+   "effectif_tranche": "51",
+   "statut": "Active",
+   "ville_officielle": "PARIS",
+   "bodacc_alerte": false
+  },
+  {
+   "code": "CW002",
+   "nom_recherche": "Printemps",
+   "canal": "Wholesale",
+   "ca_interne": 640,
+   "encours": 150,
+   "dso": 61,
+   "siren": "503314767",
+   "nom_officiel": "PRINTEMPS",
+   "naf": "47.19A",
+   "effectif_tranche": "51",
+   "statut": "Active",
+   "ville_officielle": "PARIS",
+   "bodacc_alerte": false
+  }
+ ],
+ "fournisseurs": [
+  {
+   "code": "F013",
+   "nom_recherche": "Filatures Aquitaine",
+   "pays": "France",
+   "devise": "EUR",
+   "vol25": 312,
+   "siren": "453223158",
+   "nom_officiel": "THEATRE D ART AU COEUR DE L AQUITAINE (T.A.C.A.)",
+   "naf": "90.01Z",
+   "effectif_tranche": "01",
+   "statut": "Active",
+   "ville_officielle": "PERIGUEUX",
+   "bodacc_alerte": false
+  },
+  {
+   "code": "F001",
+   "nom_recherche": "Ningbo Textile",
+   "pays": "Chine",
+   "devise": "USD",
+   "vol25": 3630,
+   "siren": "904107547",
+   "nom_officiel": "NINGBO ENJOY TEXTILE FACTORY",
+   "naf": "47.91A",
+   "effectif_tranche": "NN",
+   "statut": "Cessée",
+   "ville_officielle": null,
+   "bodacc_alerte": false
+  }
+ ],
+ "veille": {
+  "bodacc": [
+   {
+    "code": "CW001",
+    "nom": "MAGASINS GALERIES LAFAYETTE (MGL)",
+    "siren": "957503931",
+    "annonces": [
+     {
+      "date": "2026-07-22",
+      "type": "Dépôts des comptes",
+      "tribunal": "Greffe du Tribunal des Activités Economiques de paris",
+      "detail": "C"
+     },
+     {
+      "date": "2026-07-22",
+      "type": "Dépôts des comptes",
+      "tribunal": "Greffe du Tribunal des Activités Economiques de paris",
+      "detail": "C"
+     },
+     {
+      "date": "2026-07-22",
+      "type": "Dépôts des comptes",
+      "tribunal": "Greffe du Tribunal des Activités Economiques de paris",
+      "detail": "C"
+     },
+     {
+      "date": "2026-01-30",
+      "type": "Modifications diverses",
+      "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+      "detail": "B"
+     },
+     {
+      "date": "2023-03-09",
+      "type": "Modifications diverses",
+      "tribunal": "Greffe du Tribunal de Commerce de Paris",
+      "detail": "B"
+     }
+    ],
+    "alerte": false
+   },
+   {
+    "code": "CW002",
+    "nom": "PRINTEMPS",
+    "siren": "503314767",
+    "annonces": [
+     {
+      "date": "2025-11-18",
+      "type": "Modifications diverses",
+      "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+      "detail": "B"
+     },
+     {
+      "date": "2025-10-23",
+      "type": "Modifications diverses",
+      "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+      "detail": "B"
+     },
+     {
+      "date": "2022-04-08",
+      "type": "Modifications diverses",
+      "tribunal": "Greffe du Tribunal de Commerce de Paris",
+      "detail": "B"
+     },
+     {
+      "date": "2020-12-09",
+      "type": "Modifications diverses",
+      "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE PARIS",
+      "detail": "B"
+     },
+     {
+      "date": "2020-03-22",
+      "type": "Modifications diverses",
+      "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE PARIS",
+      "detail": "B"
+     }
+    ],
+    "alerte": false
+   },
+   {
+    "code": "F013",
+    "nom": "THEATRE D ART AU COEUR DE L AQUITAINE (T.A.C.A.)",
+    "siren": "453223158",
+    "annonces": [],
+    "alerte": false
+   },
+   {
+    "code": "F001",
+    "nom": "NINGBO ENJOY TEXTILE FACTORY",
+    "siren": "904107547",
+    "annonces": [],
+    "alerte": false
+   }
+  ],
+  "presse": [
+   {
+    "theme": "Prêt-à-porter & retail",
+    "titre": "L’enseigne Okaïdi a baissé le rideau en plein centre-ville d’Angers - Ouest-France",
+    "source": "Ouest-France",
+    "date": "2026-07-20",
+    "lien": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQaVVDUXdqVHZvYWFicmc1STlZVzNTekctNlRLVW03bjgtTWtjeTllOVJrVzduRWhKSm5uZkVibktMNTgzSUNiajh2bXp1OGdUellfQVBGX2hEbzBNYWNnSHgwbXhXaUl2M1V3dFM5dVBMWXRHY2FPTWt1emZ3UHVYejRraTVZS3V5RWw2Tk43a29xT0tmUHh3UElCR0NWNEVRcHhEY2JPMHBDS0lHSkhjb2N6bGx1ZkZmSnhwSjBmZnVKYzZaSTdVNXpESVVEbkM3MGNZdDVNYld1SHV3YjZ4SExR?oc=5"
+   },
+   {
+    "theme": "Textile & sourcing",
+    "titre": "Le textile-habillement résiste aux turbulences du marché mondial - lecourrier.vn",
+    "source": "lecourrier.vn",
+    "date": "2026-07-20",
+    "lien": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXRlX0VCMzN5YlRIWTVPT2E4U2xHWFZxRnl1eHBJbnVpeXQyMlgyN1V6NFJRUVFTYktHeG5LN25uaThkSXlQZlpMRHZUZWN5V29BaXdrQVJXcWZSbVd6X2RRUnQ1MlhLUENnUHBWa2lNLW5KSEw0T1JiOWQ3dDBEa3V1RHlrMWl0WUhHbDFRUkdVT292ejJmeFIxejBPWVJT?oc=5"
+   },
+   {
+    "theme": "Prêt-à-porter & retail",
+    "titre": "Dans le centre-ville de Caen, l’enseigne française Cyrillus va signer son retour, rue Saint-Pierre - Ouest-France",
+    "source": "Ouest-France",
+    "date": "2026-07-17",
+    "lien": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNWUlEZFRxQUR4WHVZekRpZ3BhOVk2bDFPcDc1d2ZpY2hmeEhwMUVRczJ6U0JQLXloNklPLVVTZTlLTEJURXptY2ZBajJLbTA5aG1Ca0dqVXBGUDFQRXYtRUhaSFlMQVFqX0JIYzR6Y0l3NGhFOGpmY01XajFPcEpIUXF6NlNnTVVLd2FzWGdscXlhQTV3UzRSR1B3TGdxMmdBNFgtUTVVc2ZCQmw5SlEwM1Jsa1VMUTFhT080dlZHQkxvR2hwVnBLVXVHbWRrTU1HbG43UHRoS1FlOFFpMk5iTjdjTEVyZVB1ZmtTeTFwVHVQOFlYYXZYQjZwRElNeWEzYWtZUUhGZDJEUQ?oc=5"
+   },
+   {
+    "theme": "Prêt-à-porter & retail",
+    "titre": "Une nouvelle enseigne de prêt-à-porter va s’installer dans le centre-ville de La Flèche - - Le Mans.maville.com",
+    "source": "- Le Mans.maville.com",
+    "date": "2026-07-15",
+    "lien": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOZFJHR0pJSWZ0UjRUT2EtRDFVcGwwMlN2YlhJMW1xSjBaTmExRThoaUJ1N3ZlSDhxbGNzay1uUU1zVHpnUzlxcER6WlVoanVOODRTajNIaGlRNVF4VUptdUpGU1Z5aW5iY2xGV29IZU9LQU5IZFk3Nzl6aEEtS3hHVm5QOEQ0QkhBa1RfQmtDTkpwZV93Xzc1a2U2d2N2OERmUWVYRENZM1ZNZWVJemU2R1NZbzdnd0s5T1VwOFZ6NVQ0b3JORUloYzYwTWZ1WlF5cHc5ci1sUFBYZ3JkZ21JMw?oc=5"
+   },
+   {
+    "theme": "Prêt-à-porter & retail",
+    "titre": "Au Mans, cette boutique de prêt-à-porter pour hommes liquide avant sa fermeture - Ouest-France",
+    "source": "Ouest-France",
+    "date": "2026-07-15",
+    "lien": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQbnVWNlljaXdueVk1SG01NVpja0Y3a1RZTnk5ZHUyNHY4R2oyU0l0TktRRlI4SVlMQnhyUU1QNlFWakp2QmhUQWw5UzdKUzFZa2R2dGhqMXNaYzRmSV9MU0pmV0pxRkEtTFJvZTZfMTJmczJDeTRfUW9MSGhOUjRzMmtwOFZHU1dCMDRiamEtTEl5NkhCclZBdE5HRm9Vbk83ZzYyM01Ydm9YX2dkVkhWYWt2SW5rYzBEZjhpRE9Ma0FOd0VIcjdzdkxnOVFZNEtxRVEwQkRqTG5jY3JCSVBNWUFsbXF6RW9tRVhBRzFCQ3RPQ2s?oc=5"
+   },
+   {
+    "theme": "Conjoncture consommation",
+    "titre": "Pondération de l'indice des prix à la consommation - Base 2025 - Ensemble des ménages - France métropolitaine - Nomenclature Coicop : 03 - Articles d’habillement et chaussures - Insee",
+    "source": "Insee",
+    "date": "2026-07-13",
+    "lien": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE01X3pGQVZxSU91MV9IWXcwVURqMGZXcWtEUDdaQjdid09oeldwcEltaW5KNFU2QUpoVERyb0NQMTlPbjd2a043YzdtVEdaZE5pSTdTdldfVnRUbC1ubV8wRVlR?oc=5"
+   }
+  ],
+  "prompt_digest": "Tu es le contrôleur de gestion de MAISON BASTIDE SAS (Bordeaux) — activité : Commerce de détail d'habillement en magasin spécialisé. Voici la veille des 14 derniers jours :\n- [Prêt-à-porter & retail] 2026-07-20 — L’enseigne Okaïdi a baissé le rideau en plein centre-ville d’Angers - Ouest-France (Ouest-France)\n- [Textile & sourcing] 2026-07-20 — Le textile-habillement résiste aux turbulences du marché mondial - lecourrier.vn (lecourrier.vn)\n- [Prêt-à-porter & retail] 2026-07-17 — Dans le centre-ville de Caen, l’enseigne française Cyrillus va signer son retour, rue Saint-Pierre - Ouest-France (Ouest-France)\n- [Prêt-à-porter & retail] 2026-07-15 — Une nouvelle enseigne de prêt-à-porter va s’installer dans le centre-ville de La Flèche - - Le Mans.maville.com (- Le Mans.maville.com)\n- [Prêt-à-porter & retail] 2026-07-15 — Au Mans, cette boutique de prêt-à-porter pour hommes liquide avant sa fermeture - Ouest-France (Ouest-France)\n- [Conjoncture consommation] 2026-07-13 — Pondération de l'indice des prix à la consommation - Base 2025 - Ensemble des ménages - France métropolitaine - Nomenclature Coicop : 03 - Articles d’habillement et chaussures - Insee (Insee)\n\nProduis un digest structuré selon ces rubriques (Prêt-à-porter & retail · Textile & sourcing · E-commerce mode · Conjoncture consommation) : pour chacune, 2-3 faits saillants et leur implication concrète pour MAISON BASTIDE SAS. Termine par les 3 signaux à surveiller. N'invente rien qui ne soit pas dans la liste.",
+  "rappels_produits": []
+ },
+ "co2": {
+  "provenance": "ADEME Base Carbone®",
+  "maritime_g_tkm": {
+   "valeur": 0.00554,
+   "source": "Porte-conteneur",
+   "unite": "kgCO2e/t.km"
+  },
+  "routier_g_tkm": {
+   "valeur": 0.0946,
+   "source": "Ensemble articulé",
+   "unite": "kgCO2e/tonne.km"
+  }
+ },
+ "conjoncture": {
+  "ipch_pct": {
+   "2025-01": 1.8,
+   "2025-02": 1.6,
+   "2025-03": 0.6,
+   "2025-04": 0.2,
+   "2025-05": 0.1,
+   "2025-06": 0.3,
+   "2025-07": 1.9,
+   "2025-08": 1.4,
+   "2025-09": 0.7,
+   "2025-10": 0.3,
+   "2025-11": 0.3,
+   "2025-12": 0.4
+  },
+  "ipch_libelle": "Habillement et chaussures",
+  "jours_feries": {
+   "2026-01-01": "1er janvier",
+   "2026-04-06": "Lundi de Pâques",
+   "2026-05-01": "1er mai",
+   "2026-05-08": "8 mai",
+   "2026-05-14": "Ascension",
+   "2026-05-25": "Lundi de Pentecôte",
+   "2026-07-14": "14 juillet",
+   "2026-08-15": "Assomption",
+   "2026-11-01": "Toussaint",
+   "2026-11-11": "11 novembre",
+   "2026-12-25": "Jour de Noël"
+  }
+ },
+ "secteur": {
+  "barometre": {
+   "publications_secteur": [
+    {
+     "titre": "Mode et chaussures : avec 3,6 milliards de pièces vendues en 2025, le marché français est en croissance (chiffres et infographie) - LSA",
+     "date": "2026-06-17",
+     "source": "LSA",
+     "lien": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQakNEa3BBQ29KZm9oTGQ5RHllWlV2TzhGdFZzNHFwWkNtdWU3ZHRPUGJxeWF0dDFfN2VfVU5KdGk4TlA5LThDN3VUa0d1T09EUm5JLWVRWkQxMGgyZi1FTGFLVGtKRkEzTTFHcTlQeWJxUzN1Q1FsQV93RUVPRDJobUZRY3p5VHAtcFhBWWxrNXdPRFRoOGg1bnV0WTEtcXp3Ml9GN0JCQWFlNXJ0aXozSDRKRGE3Nk9QLXB2bl9SNXA5WjdfbE8wbGxPckNtQy0xcUxxODJtU0tBSl9yNFdHOVZWbUJGRXlJSmVBbA?oc=5"
+    },
+    {
+     "titre": "Bilan de mai 2026 : Une conjoncture en demi-teinte pour l'habillement français - FashionUnited",
+     "date": "2026-06-18",
+     "source": "FashionUnited",
+     "lien": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaU1tSHJ4WUZmRHpNT0szd3hIVGhtd042SUl3SmNCenFqUjg1bzRwYi1UbTBDaTN4V1FMQlg4clZfZldNU3hsQ3lOazljXzgwcmFPd0FaT3p1MTFMZDZKMjZjNEFQS1dvc0NVd2FfLUpWRG1vY19iMmt0dVkzdEtMWmI2TDc0RERIbUVDU1I1QU9hbF9oVE5uOEZmR05LMmZIbVdOUFRXLVJCb2dPb0pHcDdxQ1JSTTFVMzloTkI4YjhtcFdNVy12Z195VQ?oc=5"
+    }
+   ]
+  },
+  "tendances_recherche": {}
+ }
+}
