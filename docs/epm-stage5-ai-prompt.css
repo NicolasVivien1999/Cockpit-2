@@ -1,0 +1,46 @@
+.ai-prompt-stage5{margin:.9rem 0}
+.ai-prompt-box textarea{
+  width:100%;
+  min-height:320px;
+  font:13px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace;
+  border:1px solid var(--stitch);
+  border-radius:12px;
+  padding:.85rem;
+  background:var(--card);
+  color:var(--ink);
+}
+.ai-prompt-tools{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.45rem;
+  margin:.6rem 0;
+}
+.ai-prompt-tools select,
+.ai-prompt-tools button{
+  font:inherit;
+  font-size:.78rem;
+  border:1px solid var(--stitch);
+  border-radius:999px;
+  background:var(--card);
+  color:var(--ink);
+  padding:.42rem .75rem;
+  cursor:pointer;
+}
+.ai-prompt-tools button.primary{
+  background:var(--chalk);
+  color:#fff;
+  border-color:var(--chalk);
+}
+#panel-assistant .ai-prompt-stage5{
+
+margin-top:1rem;
+
+}
+
+ 
+
+#tab-assistant{
+
+--tabc:#6B4FA3;
+
+}
