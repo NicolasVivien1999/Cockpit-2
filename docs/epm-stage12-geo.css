@@ -1,0 +1,33 @@
+/* =====================================================================
+   Couche 2 — Géo & supply chain
+   ===================================================================== */
+.s12-sub{display:flex;gap:.3rem;flex-wrap:wrap;margin:.1rem 0 .9rem}
+.s12-sub button{font:inherit;font-size:.76rem;border:1px solid var(--stitch);background:var(--card);
+  color:var(--ink2);border-radius:999px;padding:.28rem .8rem;cursor:pointer;transition:var(--trans)}
+.s12-sub button[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.s12-grid{display:grid;gap:.9rem}
+.s12-grid.c2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.s12-chartwrap{position:relative;height:300px;width:100%}
+.s12-chartwrap.short{height:240px}
+.s12-map{height:380px;border-radius:var(--r);border:1px solid var(--stitch);overflow:hidden}
+.s12-cap{font-size:.72rem;color:var(--ink3);margin:.15rem 0 .55rem}
+
+tr.s12-click{cursor:pointer}
+tr.s12-click:hover td{background:var(--chalk-soft)}
+tr.s12-sel td{background:var(--chalk-soft);box-shadow:inset 3px 0 0 var(--chalk)}
+.s12-rank{font-weight:700;color:var(--navy)}
+.s12-pos{color:var(--green)} .s12-neg{color:var(--red)}
+
+.s12-note{border-left:3px solid var(--navy);background:var(--stitch2);border-radius:var(--r);
+  padding:.6rem .8rem;font-size:.83rem;line-height:1.5;margin-top:.4rem}
+.s12-note b{color:var(--navy)} .s12-note .neg{color:var(--red)} .s12-note .pos{color:var(--green)}
+
+.s12-ck{font-size:.74rem;margin-top:.35rem}
+.s12-ck b.ok{color:var(--green)} .s12-ck b.ko{color:var(--red)}
+.s12-hyp input.edit{width:5.6em}
+
+@media print{
+  .s12-map{display:none !important}
+  .s12-sub{display:none !important}
+  .s12-chartwrap{height:58mm !important}
+}

@@ -1,0 +1,42 @@
+/* =====================================================================
+   Couche 4 — Lien données externes & Veille (stage13)
+   ===================================================================== */
+.s13-empty{border:1.5px dashed var(--stitch);border-radius:var(--r);padding:1.2rem 1.4rem;
+  background:var(--card);max-width:760px}
+.s13-empty h3{margin:.1rem 0 .5rem;color:var(--navy)}
+.s13-empty ol{margin:.4rem 0 .8rem 1.1rem;padding:0;font-size:.86rem;line-height:1.55}
+.s13-actions{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.4rem}
+.s13-btn{font:inherit;font-size:.8rem;border:1px solid var(--navy);background:var(--navy);color:#fff;
+  border-radius:8px;padding:.42rem .85rem;cursor:pointer;transition:var(--trans)}
+.s13-btn.sec{background:var(--card);color:var(--navy)}
+.s13-btn:hover{filter:brightness(1.12)}
+#s13-file{display:none}
+
+.s13-meta{font-size:.74rem;color:var(--ink3);margin:.2rem 0 .8rem}
+.s13-meta b{color:var(--ink2)}
+
+.s13-chips{display:flex;gap:.3rem;flex-wrap:wrap;margin:.2rem 0 .7rem}
+.s13-chips button{font:inherit;font-size:.74rem;border:1px solid var(--stitch);background:var(--card);
+  color:var(--ink2);border-radius:999px;padding:.24rem .7rem;cursor:pointer}
+.s13-chips button[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+tr.s13-alerte td{background:#F9E4E2 !important;box-shadow:inset 3px 0 0 var(--red)}
+.s13-flag{font-weight:700}
+.s13-flag.ko{color:var(--red)} .s13-flag.ok{color:var(--green)}
+
+.s13-art{padding:.45rem 0;border-bottom:1px dashed var(--stitch)}
+.s13-art:last-child{border-bottom:none}
+.s13-art .t{font-size:.85rem}
+.s13-art a{color:var(--navy);text-decoration:none}
+.s13-art a:hover{text-decoration:underline}
+.s13-art .m{font-size:.71rem;color:var(--ink3);margin-top:.1rem}
+.s13-theme{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.03em;
+  color:var(--navy);background:var(--stitch2);border-radius:4px;padding:.08rem .4rem;margin-right:.4rem}
+
+#tab-veille .s13-dot{display:inline-block;width:.55em;height:.55em;border-radius:50%;
+  background:var(--red);margin-left:.35em;vertical-align:middle}
+
+@media print{
+  .s13-actions,.s13-chips,#s13-file{display:none !important}
+  .s13-art a{color:#1E2833}
+}

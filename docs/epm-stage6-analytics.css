@@ -1,0 +1,51 @@
+/* =====================================================================
+   Étape 3 — Analyses avancées · Scénarios · Tendances
+   Réutilise les tokens du cockpit (:root) : --card, --stitch, --ink,
+   --navy, --green, --red, --amber, --fd, --fs, --r, --shadow.
+   ===================================================================== */
+
+.s6-grid{display:grid;gap:.9rem}
+.s6-grid.k4{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.s6-grid.k3{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.s6-grid.c2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.s6-chartwrap{position:relative;height:300px;width:100%}
+.s6-chartwrap.tall{height:340px}
+.s6-chartwrap.short{height:230px}
+
+.s6-sub{display:flex;gap:.3rem;flex-wrap:wrap;margin:.1rem 0 .9rem}
+.s6-sub button{font:inherit;font-size:.76rem;border:1px solid var(--stitch);background:var(--card);
+  color:var(--ink2);border-radius:999px;padding:.28rem .8rem;cursor:pointer;transition:var(--trans)}
+.s6-sub button:hover{border-color:var(--edit-bd)}
+.s6-sub button[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+.s6-cap{font-size:.72rem;color:var(--ink3);margin:.15rem 0 .55rem;letter-spacing:.02em}
+
+/* pastilles ABC / feux */
+.s6-tag{display:inline-block;min-width:1.4em;text-align:center;font-weight:700;font-size:.72rem;
+  border-radius:4px;padding:.02rem .35rem;color:#fff}
+.s6-tag.A{background:var(--green)} .s6-tag.B{background:var(--amber)} .s6-tag.C{background:var(--grey-tab)}
+
+.s6-delta.pos{color:var(--green)} .s6-delta.neg{color:var(--red)}
+.s6-anom{font-weight:700} .s6-anom.warn{color:var(--red)} .s6-anom.ok{color:var(--green)}
+
+/* table scénarios : colonnes colorées */
+.s6-scen th.stress,.s6-scen td.stress{background:var(--red-soft)}
+.s6-scen th.central,.s6-scen td.central{background:var(--chalk-soft)}
+.s6-scen th.optim,.s6-scen td.optim{background:var(--green-soft)}
+.s6-scen td{text-align:right}
+.s6-scen td:first-child,.s6-scen th:first-child{text-align:left}
+.s6-scen tr.lvl td{font-weight:700;border-top:2px solid var(--stitch)}
+
+/* bloc narratif */
+.s6-note{border-left:3px solid var(--navy);background:var(--stitch2);border-radius:var(--r);
+  padding:.6rem .8rem;font-size:.82rem;color:var(--ink);line-height:1.45;margin-top:.2rem}
+.s6-note b{color:var(--navy)}
+.s6-note.warn{border-left-color:var(--red)} .s6-note.warn b{color:var(--red)}
+
+/* mini légende scénarios */
+.s6-leg{display:flex;gap:.9rem;flex-wrap:wrap;font-size:.74rem;color:var(--ink2);margin:.1rem 0 .6rem}
+.s6-leg span{display:inline-flex;align-items:center;gap:.35rem}
+.s6-leg i{width:.8rem;height:.8rem;border-radius:3px;display:inline-block}
+
+/* inputs hypothèses réutilisent .edit ; petit ajustement largeur */
+.s6-scen input.edit{width:6.4em}

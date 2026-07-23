@@ -1,0 +1,40 @@
+DOSSIER "docs/" — COCKPIT AUTO-ALIMENTÉ (GitHub Pages)
+=======================================================
+
+CE QUE FAIT CE DOSSIER
+  Déposé dans le dossier docs/ de ton dépôt GitHub, il fait vivre le
+  cockpit à la même adresse que le fichier de collecte produit chaque
+  lundi par le robot. Résultat : tu ouvres une adresse web, et la veille
+  de la semaine est déjà là. Plus aucun téléchargement, plus aucun import.
+
+CONTENU
+  index.html ............ le cockpit (renommé ainsi : GitHub Pages ouvre
+                          toujours index.html en premier)
+  epm-stage*.js / .css .. les 24 extensions
+  (le fichier cockpit_data_v2.json n'est PAS ici : c'est le robot qui
+   l'écrit dans ce même dossier à chaque exécution)
+
+MISE EN PLACE (une seule fois)
+  1. Dépose tout le contenu de ce dossier dans docs/ de ton dépôt.
+  2. Settings > Pages > Source : "Deploy from a branch"
+     Branch : main   —   Dossier : /docs   —   Save.
+  3. Patiente 1 à 2 minutes : GitHub affiche l'adresse de ton site,
+     du type  https://<toncompte>.github.io/<dépôt>/
+  4. Ouvre cette adresse : le cockpit se charge et lit tout seul la
+     dernière collecte.
+
+CHAQUE SEMAINE, ENSUITE
+  Le lundi, le robot réécrit cockpit_data_v2.json au même endroit.
+  À ta prochaine ouverture, le cockpit détecte une collecte plus récente
+  que celle qu'il avait en mémoire et l'adopte automatiquement (un petit
+  message "Collecte actualisée" te le confirme). Une collecte plus
+  ancienne n'écrase jamais une plus récente.
+
+À SAVOIR
+  - Sur un dépôt PUBLIC, cette adresse est publique : n'y mets le cockpit
+    que si ses données de démonstration peuvent être vues de tous.
+    Pour des données réelles : dépôt privé (Pages privé = offre payante),
+    ou reste sur l'import manuel depuis l'onglet Veille & alertes.
+  - Ouvert directement depuis ton disque (double-clic), l'auto-chargement
+    ne fonctionne pas : c'est une sécurité des navigateurs. Le bouton
+    d'import de l'onglet Veille & alertes reste alors disponible.
